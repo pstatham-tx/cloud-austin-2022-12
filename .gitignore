@@ -1,10 +1,7 @@
 .python-venv
 
-# IDEA
-.idea
+reveal.json
 
 # Generated site
 _site
 site
-
-reveal.js
