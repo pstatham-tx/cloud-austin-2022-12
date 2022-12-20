@@ -1,19 +1,22 @@
 ---
 template: reveal.html
 ---
-# Slides
+<h4 style="color:red">Work-in-Progress</h4>
 
-### From Reveal
+## Observability Primatives
+
+<small>Perry Statham</small>
+<br>
+<small>pstatham.tx@gmail.com</small>
+<br>
+<small>https://www.linkedin.com/in/perrystatham/</small>
+<br><br>
+<small>These slides are at: </small>
+<small>https://github.com/pstatham-tx/cloud-austin-2022-12</small>
 
 ---
 
-# Slide 2
-
---
-
-### Vertical
-
-TODO
+# The Problem
 
 ---
 
