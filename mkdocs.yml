@@ -1,0 +1,44 @@
+site_name: Observability Primitives
+site_url: https://pstatham-tx.github.io/cloud-austin-2022-12
+site_description: >
+  Observability Primitives - Cloud Austin December 2022
+repo_url: https://github.com/pstatham-tx/cloud-austin-2022-12
+
+nav:
+  - Introduction: index.md
+  - Slides: slides.md
+
+theme:
+  name: material
+  custom_dir: theme
+  palette:
+    primary: black
+    accent: red
+  feature:
+    tabs: true
+
+reveal:
+  path: reveal.js/dist
+  transition: slide
+  theme:
+    name: white.css
+    path: theme
+  plugin:
+    path: reveal.js/plugin
+
+extra:
+  author:
+    name: Perry Statham
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - extra
+  - meta
+  - tables
+  - toc
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed
+  - pymdownx.tasklist

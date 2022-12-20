@@ -1,0 +1,10 @@
+###############################################################################
+# Python modules needed to run mkdocs.
+# To install:
+#   pip install -r requirements.txt
+###############################################################################
+
+mkdocs
+mkdocs-material
+mkdocs-git-revision-date-localized-plugin
+mkdocs-include-markdown-plugin

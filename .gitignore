@@ -1,0 +1,10 @@
+.python-venv
+
+# IDEA
+.idea
+
+# Generated site
+_site
+site
+
+reveal.js
