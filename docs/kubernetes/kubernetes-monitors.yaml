@@ -1,0 +1,20 @@
+apiVersion: monitors/v1alpha1
+kind: Rule
+metadata:
+  name: container.memory.usage.high
+  description:
+spec:
+  metrics:
+    container.memory.usage
+    k8s.container.memory_limit
+    oca.core.up
+  expression: (container.memory.usage > 100) AND (k8s.container.memory_limit[labels][id] == container.memory.usage[labels][id])
+  for: 15m
+  severity: warning
+  annotations:
+    summary: Container {{$labels.container.name}} has been using more than its memory limit for at least 15 minutes.
+    description: |
+      Container: {{ container.memory.usage[labels][name] }}
+      Namespace: {{ container.memory.usage[labels][namespace] }}
+      Environment: {{ oca.core.up[labels][environment] }}
+      Memory Limit: {{ k8s.container.memory_limit }}

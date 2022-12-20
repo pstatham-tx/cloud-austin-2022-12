@@ -1,0 +1,53 @@
+---
+
+apiVersion: oca/v1alpha1
+kind: metric
+metadata:
+  name: container.cpu.utilization
+  description: "Container CPU utilization"
+  enabled: true
+spec:
+  unit: 1
+  gauge:  # must be one of (sum, gauge, histogram)
+    value_type: double
+
+---
+
+apiVersion: oca/v1alpha1
+kind: metric
+metadata:
+  name: container.cpu.time
+  description: "Container CPU time"
+  enabled: true
+spec:
+  unit: s   # seconds
+  sum:
+    value_type: double
+    monotonic: true
+    aggregation: cumulative
+
+---
+
+apiVersion: oca/v1alpha1
+kind: metric
+metadata:
+  name: container.memory.available
+  description: "Container memory available"
+  enabled: true
+spec:
+  unit: By  # bytes
+  gauge:
+    value_type: int
+
+---
+
+apiVersion: oca/v1alpha1
+kind: metric
+metadata:
+  name: container.memory.usage
+  description: "Container memory usage"
+  enabled: true
+spec:
+  unit: By  # bytes
+  gauge:
+    value_type: int

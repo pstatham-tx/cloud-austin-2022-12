@@ -21,7 +21,7 @@ reveal:
   path: reveal.js/dist
   transition: slide
   theme:
-    name: white.css
+    name: serif.css
     path: theme
   plugin:
     path: reveal.js/plugin
@@ -42,3 +42,4 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.tabbed
   - pymdownx.tasklist
+  - pymdownx.snippets
