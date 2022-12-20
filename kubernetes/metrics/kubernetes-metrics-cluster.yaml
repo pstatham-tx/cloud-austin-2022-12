@@ -1,0 +1,10 @@
+apiVersion: oca/v1alpha1
+kind: metric
+metadata:
+  name: container.cpu.utilization
+  description: "Container CPU utilization"
+  enabled: true
+spec:
+  unit: 1
+  gauge:  # must be one of (sum, gauge, histogram)
+    value_type: double
